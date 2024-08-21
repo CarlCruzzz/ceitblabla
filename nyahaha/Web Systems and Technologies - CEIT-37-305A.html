@@ -1,0 +1,208 @@
+<html>
+
+<head>
+	<style>
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+header {
+	background: #2a0000;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2 {
+	font-family:Gill Sans MT;
+	color: white;
+	text-align: Center;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 75%, rgba(43, 0, 0, 1) 100%);
+}
+
+.aggin {
+    width: 100%;
+    background: #141414;
+    overflow: auto;
+    display: flex;
+    justify-content: center; /* Center the nav items horizontally */
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex; /* Align the items horizontally */
+}
+
+li {
+    margin: 0 15px; /* Add some spacing between the menu items */
+}
+
+.aggin a {
+    display: block;
+    padding: 20px 15px;
+    text-decoration: none;
+    font-family: Gill Sans MT;
+    color: white;
+    text-align: center;
+}
+
+.aggin a:hover {
+    color: red;
+    transition: 0.5s;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+.aggin a:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: red;
+    height: 4px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.aggin a:hover:before,
+.aggin a:focus:before,
+.aggin a:active:before {
+    right: 0;
+}
+
+.home {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+p {
+	font-family:Gill Sans MT;
+	text-align:center;
+	color:white;
+}
+
+img {
+    width: auto; /* Set the width */
+    height: 200px; /* Set the height */
+}
+
+.websites {
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+	justify-content: center;
+}
+
+.websites ul {
+    display: flex;
+    justify-content: center; /* Center the items horizontally in a row */
+    align-items: center; /* Align items vertically in the center */
+    gap: 20px; /* Space between each item */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.websites li {
+    text-align: center; /* Center the text under each image */
+}
+
+.websites img {
+    width: auto;
+    height: 150px; /* Adjust the height as needed */
+	transition: transform 0.3s ease;
+}
+
+.websites a {
+    text-decoration: none; /* Remove underline from the links in the websites section */
+}
+
+.websites a:hover img {
+    transform: scale(1.1); /* Scale the image by 20% */
+}
+
+.websites p {
+    margin-top: 10px;
+    font-family: Gill Sans MT;
+    color: white;
+    text-align: center;
+}
+
+.web {
+	margin-bottom: 20px;
+}
+
+footer {
+	margin-top: 100px;
+}
+
+.footer {
+	color: gray;
+	background: #141414;
+	padding: 10px 15px;
+}
+
+	</style>
+	<title>Web Systems and Technologies - CEIT-37-305A</title>
+</head>
+
+<body>
+	<header>
+		<h1>Carl's Webpage!</h1>
+		<h2>CEIT-37-305A</h2>
+	</header>
+	
+	<nav class="aggin">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Syllabus</a></li>
+			<li><a href="#">Assignments</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+	
+	<div class="home">
+		<h1>Hello!</h1>
+		<<p>This is the official page for section CEIT-37-305A. Explore the resources, assignments, and syllabus to stay on track with the course.</p>
+		</div>
+		
+	<div class="websites">
+		<h1 class="web">Websites I usually visit:</h1>
+		<nav class="sites">
+		<ul>
+            <li><a href="https://www.instagram.com"><img src="ig.png"><p>Instagram</p></a></li>
+            <li><a href="https://www.x.com"><img src="x.png"><p>X (formerly 'Twitter')</p></a></li>
+            <li><a href="https://www.facebook.com"><img src="fb.png"><p>Facebook</p></a></li>
+            <li><a href="https://www.youtube.com"><img src="yt.png"><p>Youtube</p></a></li>
+        </ul>
+    </nav>
+	</div>
+		
+		
+	<footer><p class="footer">&copy; 2024 Web Systems and Technologies | CEIT-37-305A</p></footer><script>document.addEventListener("DOMContentLoaded", function() {
+            console.log("Welcome to the Retro Web Systems and Technologies page!");
+        });
+    </script>
+	
+</body>
+
+
+</html>
